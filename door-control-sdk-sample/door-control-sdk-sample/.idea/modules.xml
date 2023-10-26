@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/door-control-sdk-service/door-control-sdk-service.iml" filepath="$PROJECT_DIR$/door-control-sdk-service/door-control-sdk-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/door-control-sdk-swagger/door-control-sdk-swagger.iml" filepath="$PROJECT_DIR$/door-control-sdk-swagger/door-control-sdk-swagger.iml" />
+    </modules>
+  </component>
+</project>

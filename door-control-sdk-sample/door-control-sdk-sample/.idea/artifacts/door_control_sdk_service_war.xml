@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="door-control-sdk-service:war">
+    <output-path>$PROJECT_DIR$/door-control-sdk-service/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>door-control-sdk-service</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="door-control-sdk-service-1.0.0-SNAPSHOT-${buildNumber}-dev.war">
+      <element id="artifact" artifact-name="door-control-sdk-service:war exploded" />
+    </root>
+  </artifact>
+</component>

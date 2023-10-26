@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	<appender name="door-control-sdk" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_PATH}/door-control-sdk.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 按天回滚 daily -->
+			<fileNamePattern>${LOG_PATH}/door-control-sdk.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- 日志最大的历史 10天 -->
+            <maxHistory>10</maxHistory>
+		</rollingPolicy>
+		<encoder charset="UTF-8">
+			<pattern>${FILE_LOG_PATTERN}</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+	
+	<springProfile name ="dev">
+		<logger name="com.door" level="info" additivity="false">
+			<appender-ref ref="STDOUT" />
+		</logger>
+	</springProfile>
+	<springProfile name ="test">
+		<logger name="com.door" level="info" additivity="false">
+			<appender-ref ref="STDOUT" />
+		</logger>
+	</springProfile>
+	<springProfile name ="prod">
+		<logger name="com.door" level="info" additivity="false">
+			<appender-ref ref="door-control-sdk" />
+		</logger>
+	</springProfile>
+</configuration>

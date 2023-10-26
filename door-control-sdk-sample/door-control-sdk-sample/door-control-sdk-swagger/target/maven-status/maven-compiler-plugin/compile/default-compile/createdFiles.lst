@@ -1,0 +1,5 @@
+com/door/control/sdk/swagger/DoorControlSdkMQController.class
+com/door/control/sdk/swagger/DoorControlSdkHttpController.class
+com/door/control/sdk/swagger/DocketConfiguration.class
+com/door/control/sdk/swagger/JmsConfiguration.class
+com/door/control/sdk/swagger/HomeController.class

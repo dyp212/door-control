@@ -1,0 +1,16 @@
+version: '3'
+services:
+  activemq:
+    image: docker.io/webcenter/activemq
+
+  api:
+    image: registry-vpc.cn-beijing.aliyuncs.com/jingtitong/door-sdk-server
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+    ports:
+      - 6080:6080
+      - 9000:9000
+    volumes:
+      - /opt/logs:/logs
+    links:
+      - activemq

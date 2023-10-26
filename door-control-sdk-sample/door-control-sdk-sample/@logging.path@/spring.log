@@ -1,0 +1,529 @@
+2023-09-01 14:14:19.578  INFO 5687 --- [main] com.door.control.sdk.Application         : Starting Application on jiyutkz-ubuntu with PID 5687 (/home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample/door-control-sdk-service/target/classes started by jiyutkz in /home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample)
+2023-09-01 14:14:19.580  INFO 5687 --- [main] com.door.control.sdk.Application         : The following profiles are active: @spring.profiles.active@
+2023-09-01 14:14:19.616  INFO 5687 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7357a011: startup date [Fri Sep 01 14:14:19 CST 2023]; root of context hierarchy
+2023-09-01 14:14:20.147  INFO 5687 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/spring.xml]
+2023-09-01 14:14:20.424  WARN 5687 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.door.control.sdk]' package. Please check your configuration.
+2023-09-01 14:14:20.638  INFO 5687 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60cfa9cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 14:14:20.910  INFO 5687 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 6080 (http)
+2023-09-01 14:14:20.921  INFO 5687 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 14:14:20.922  INFO 5687 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.59
+2023-09-01 14:14:21.039  INFO 5687 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 14:14:21.040  INFO 5687 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1424 ms
+2023-09-01 14:14:21.294  INFO 5687 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-01 14:14:21.297  INFO 5687 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2023-09-01 14:14:21.299  INFO 5687 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-01 14:14:21.299  INFO 5687 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-01 14:14:21.300  INFO 5687 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-01 14:14:21.306  INFO 5687 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-01 14:14:21.307  INFO 5687 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-09-01 14:14:21.348  WARN 5687 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+2023-09-01 14:14:21.351  INFO 5687 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2023-09-01 14:14:21.371  INFO 5687 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2023-09-01 14:14:21.378 ERROR 5687 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.door.control.sdk.Application.main(Application.java:26)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:77)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:54)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:208)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:470)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:443)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:200)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:126)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:61)
+	... 36 common frames omitted
+
+2023-09-01 14:18:59.523  INFO 5831 --- [main] com.door.control.sdk.Application         : Starting Application on jiyutkz-ubuntu with PID 5831 (/home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample/door-control-sdk-service/target/classes started by jiyutkz in /home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample)
+2023-09-01 14:18:59.528  INFO 5831 --- [main] com.door.control.sdk.Application         : The following profiles are active: @spring.profiles.active@
+2023-09-01 14:18:59.760  INFO 5831 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27216cd: startup date [Fri Sep 01 14:18:59 CST 2023]; root of context hierarchy
+2023-09-01 14:19:01.639  INFO 5831 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/spring.xml]
+2023-09-01 14:19:02.312  WARN 5831 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.door.control.sdk]' package. Please check your configuration.
+2023-09-01 14:19:02.587  INFO 5831 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e851c60a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 14:19:02.876  INFO 5831 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 6080 (http)
+2023-09-01 14:19:02.886  INFO 5831 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 14:19:02.888  INFO 5831 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.59
+2023-09-01 14:19:03.001  INFO 5831 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 14:19:03.001  INFO 5831 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3242 ms
+2023-09-01 14:19:03.140  INFO 5831 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-01 14:19:03.142  INFO 5831 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2023-09-01 14:19:03.144  INFO 5831 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-01 14:19:03.144  INFO 5831 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-01 14:19:03.144  INFO 5831 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-01 14:19:03.144  INFO 5831 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-01 14:19:03.145  INFO 5831 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-09-01 14:19:03.189  WARN 5831 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+2023-09-01 14:19:03.199  INFO 5831 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2023-09-01 14:19:03.215  INFO 5831 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2023-09-01 14:19:03.220 ERROR 5831 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.door.control.sdk.Application.main(Application.java:26)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:77)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:54)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:208)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:470)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:443)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:200)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:126)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:61)
+	... 36 common frames omitted
+
+2023-09-01 14:19:11.082  INFO 5917 --- [main] com.door.control.sdk.Application         : Starting Application on jiyutkz-ubuntu with PID 5917 (/home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample/door-control-sdk-service/target/classes started by jiyutkz in /home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample)
+2023-09-01 14:19:11.083  INFO 5917 --- [main] com.door.control.sdk.Application         : The following profiles are active: @spring.profiles.active@
+2023-09-01 14:19:11.136  INFO 5917 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a400542: startup date [Fri Sep 01 14:19:11 CST 2023]; root of context hierarchy
+2023-09-01 14:19:12.049  INFO 5917 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/spring.xml]
+2023-09-01 14:19:12.406  WARN 5917 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.door.control.sdk]' package. Please check your configuration.
+2023-09-01 14:19:12.626  INFO 5917 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a626158e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-01 14:19:12.913  INFO 5917 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 6080 (http)
+2023-09-01 14:19:12.927  INFO 5917 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-01 14:19:12.928  INFO 5917 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.59
+2023-09-01 14:19:13.041  INFO 5917 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-01 14:19:13.042  INFO 5917 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1906 ms
+2023-09-01 14:19:13.239  INFO 5917 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-01 14:19:13.240  INFO 5917 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2023-09-01 14:19:13.242  INFO 5917 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-01 14:19:13.242  INFO 5917 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-01 14:19:13.242  INFO 5917 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-01 14:19:13.243  INFO 5917 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-01 14:19:13.243  INFO 5917 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-09-01 14:19:13.269  WARN 5917 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+2023-09-01 14:19:13.271  INFO 5917 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2023-09-01 14:19:13.292  INFO 5917 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2023-09-01 14:19:13.296 ERROR 5917 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.door.control.sdk.Application.main(Application.java:26)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:77)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:54)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:208)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:470)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:443)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:200)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:126)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:61)
+	... 36 common frames omitted
+
+2023-09-27 16:34:41.428  INFO 14504 --- [main] com.door.control.sdk.Application         : Starting Application on jiyutkz-ubuntu with PID 14504 (/home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample/door-control-sdk-service/target/classes started by jiyutkz in /home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample)
+2023-09-27 16:34:41.447  INFO 14504 --- [main] com.door.control.sdk.Application         : The following profiles are active: @spring.profiles.active@
+2023-09-27 16:34:41.538  INFO 14504 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f354bcf: startup date [Wed Sep 27 16:34:41 CST 2023]; root of context hierarchy
+2023-09-27 16:34:42.162  INFO 14504 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/spring.xml]
+2023-09-27 16:34:42.366  WARN 14504 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.door.control.sdk]' package. Please check your configuration.
+2023-09-27 16:34:42.820  INFO 14504 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 6080 (http)
+2023-09-27 16:34:42.826  INFO 14504 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-27 16:34:42.826  INFO 14504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.59
+2023-09-27 16:34:42.918  INFO 14504 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27 16:34:42.918  INFO 14504 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1380 ms
+2023-09-27 16:34:43.055  INFO 14504 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-27 16:34:43.056  INFO 14504 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2023-09-27 16:34:43.057  INFO 14504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-27 16:34:43.058  INFO 14504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-27 16:34:43.058  INFO 14504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-27 16:34:43.058  INFO 14504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-27 16:34:43.058  INFO 14504 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-09-27 16:34:43.089  WARN 14504 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+2023-09-27 16:34:43.091  INFO 14504 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2023-09-27 16:34:43.106  INFO 14504 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2023-09-27 16:34:43.111 ERROR 14504 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.door.control.sdk.Application.main(Application.java:32)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:77)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:54)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:208)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:470)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:443)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:200)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:126)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:61)
+	... 36 common frames omitted
+
+2023-09-27 16:35:57.787  INFO 14582 --- [main] com.door.control.sdk.Application         : Starting Application on jiyutkz-ubuntu with PID 14582 (/home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample/door-control-sdk-service/target/classes started by jiyutkz in /home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample)
+2023-09-27 16:35:57.793  INFO 14582 --- [main] com.door.control.sdk.Application         : No active profile set, falling back to default profiles: default
+2023-09-27 16:35:57.873  INFO 14582 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68df9280: startup date [Wed Sep 27 16:35:57 CST 2023]; root of context hierarchy
+2023-09-27 16:35:58.648  INFO 14582 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/spring.xml]
+2023-09-27 16:35:58.869  WARN 14582 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.door.control.sdk]' package. Please check your configuration.
+2023-09-27 16:35:59.665  INFO 14582 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 6080 (http)
+2023-09-27 16:35:59.671  INFO 14582 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-27 16:35:59.672  INFO 14582 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.59
+2023-09-27 16:35:59.781  INFO 14582 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27 16:35:59.782  INFO 14582 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1909 ms
+2023-09-27 16:35:59.942  INFO 14582 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-27 16:35:59.943  INFO 14582 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2023-09-27 16:35:59.944  INFO 14582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-27 16:35:59.945  INFO 14582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-27 16:35:59.945  INFO 14582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-27 16:35:59.945  INFO 14582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-27 16:35:59.945  INFO 14582 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-09-27 16:36:00.091  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>RS:class com.door.control.sdk.procotol.response.TerminalRestartDeviceResponse
+2023-09-27 16:36:00.092  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>DA:class com.door.control.sdk.procotol.response.DataRealTimeResponse
+2023-09-27 16:36:00.092  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>GH:class com.door.control.sdk.procotol.response.TerminalHistoryResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>DU:class com.door.control.sdk.procotol.response.TerminalDelAuthResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>GU:class com.door.control.sdk.procotol.response.TerminalUserResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>UU:class com.door.control.sdk.procotol.response.TerminalAddAuthResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>HB:class com.door.control.sdk.procotol.response.HeartbeatResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>DF:class com.door.control.sdk.procotol.response.TerminalSetFingerResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>LM:class com.door.control.sdk.procotol.response.TerminalSetUploadOfflineResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>CD:class com.door.control.sdk.procotol.response.ControlRealTimeResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>RN:class com.door.control.sdk.procotol.response.TerminalSetCardSumResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>SP:class com.door.control.sdk.procotol.response.TerminalSetSuperPwdResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>SM:class com.door.control.sdk.procotol.response.TerminalSetWorkModeResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>CT:class com.door.control.sdk.procotol.response.TerminalSetTimeResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>SA:class com.door.control.sdk.procotol.response.TerminalSetSetAlarmResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>DL:class com.door.control.sdk.procotol.response.TerminalSetDisplayContentResponse
+2023-09-27 16:36:00.093  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>RM:class com.door.control.sdk.procotol.response.TerminalSetUploadResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>CU:class com.door.control.sdk.procotol.response.TerminalDelAllAuthResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>GT:class com.door.control.sdk.procotol.response.TerminalTimeResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>RR:class com.door.control.sdk.procotol.response.TerminalPhoneOpenResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>MC:class com.door.control.sdk.procotol.response.TerminalSetMoreCardOpenResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>DD:class com.door.control.sdk.procotol.response.DynamicDataRealTimeResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>DV:class com.door.control.sdk.procotol.response.TerminalSetAudioResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>RC:class com.door.control.sdk.procotol.response.TerminalExecuteActionResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>DT:class com.door.control.sdk.procotol.response.TerminalSetActionResponse
+2023-09-27 16:36:00.094  INFO 14582 --- [main] c.d.c.s.mapping.DeviceResponseRegister   : parse device request,>DH:class com.door.control.sdk.procotol.response.TerminalDelAllHistoryResponse
+2023-09-27 16:36:00.096  WARN 14582 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.door.control.sdk.inner.SocketStatusService.setLocalhost() throws java.net.UnknownHostException
+2023-09-27 16:36:00.206  INFO 14582 --- [main] uration$$EnhancerBySpringCGLIB$$e1689bcc : 初始化线程池
+2023-09-27 16:36:00.207  INFO 14582 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2023-09-27 16:36:00.491  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setTime],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setTime(java.lang.String,java.lang.Integer)
+2023-09-27 16:36:00.492  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getTimestamp],methods=[POST]}" onto public com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.getTimestamp(java.lang.String)
+2023-09-27 16:36:00.492  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.getUser(java.lang.String)
+2023-09-27 16:36:00.492  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/removedDeviceConnect],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.removedDeviceConnect(java.lang.String)
+2023-09-27 16:36:00.492  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setUploadModeOffline],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setUploadModeOffline(java.lang.String)
+2023-09-27 16:36:00.493  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getHistory],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.getHistory(java.lang.String)
+2023-09-27 16:36:00.493  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setUploadMode],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setUploadMode(java.lang.String)
+2023-09-27 16:36:00.493  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addAuth],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.addAuth(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Long,java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Integer)
+2023-09-27 16:36:00.493  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delAuth],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.delAuth(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Long)
+2023-09-27 16:36:00.494  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setAction],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setAction(java.lang.String,java.lang.Integer)
+2023-09-27 16:36:00.494  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/remoteOpen],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.remoteOpen(java.lang.String,java.lang.Long,java.lang.Integer)
+2023-09-27 16:36:00.494  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/restartDevice],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.restartDevice(java.lang.String)
+2023-09-27 16:36:00.494  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delAllAuth],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.delAllAuth(java.lang.String)
+2023-09-27 16:36:00.494  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delAllHistory],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.delAllHistory(java.lang.String)
+2023-09-27 16:36:00.495  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/phoneOpen],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.phoneOpen(java.lang.String,java.lang.Integer,java.lang.Long,java.lang.Long)
+2023-09-27 16:36:00.495  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setSetAlarm],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setSetAlarm(java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2023-09-27 16:36:00.495  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setAudio],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setAudio(java.lang.String,java.lang.Integer,java.lang.String)
+2023-09-27 16:36:00.495  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setCardSum],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setCardSum(java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Integer)
+2023-09-27 16:36:00.496  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setFullDisplayContent],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setDisplayContent(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2023-09-27 16:36:00.496  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setDisplayContent],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setDisplayContent(java.lang.String,java.lang.Integer,java.lang.String)
+2023-09-27 16:36:00.496  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setFinger],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setFinger(java.lang.String,java.lang.Integer)
+2023-09-27 16:36:00.496  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setMoreCardOpen],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setMoreCardOpen(java.lang.String,java.lang.Long,java.lang.Integer,java.lang.Integer,java.util.List<java.lang.Long>,java.lang.Integer,java.lang.Integer)
+2023-09-27 16:36:00.497  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setSuperPwd],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setSuperPwd(java.lang.String,java.lang.Long,java.lang.Long,java.lang.Boolean)
+2023-09-27 16:36:00.497  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setWorkMode],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.setWorkMode(java.lang.String,java.lang.Long,java.lang.Long,java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2023-09-27 16:36:00.497  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getQrCode],methods=[POST]}" onto com.door.control.sdk.procotol.response.ResponseVo com.door.control.sdk.swagger.DoorControlSdkHttpController.getQrCode(java.lang.Long)
+2023-09-27 16:36:00.497  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.door.control.sdk.swagger.HomeController.home()
+2023-09-27 16:36:00.498  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2023-09-27 16:36:00.500  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2023-09-27 16:36:00.501  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2023-09-27 16:36:00.502  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2023-09-27 16:36:00.503  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-09-27 16:36:00.504  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-09-27 16:36:00.710  INFO 14582 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68df9280: startup date [Wed Sep 27 16:35:57 CST 2023]; root of context hierarchy
+2023-09-27 16:36:00.773  INFO 14582 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-27 16:36:00.774  INFO 14582 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-27 16:36:00.827  INFO 14582 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-09-27 16:36:01.177  INFO 14582 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-09-27 16:36:01.339  INFO 14582 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-09-27 16:36:01.781  INFO 14582 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2023-09-27 16:36:01.783  INFO 14582 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2023-09-27 16:36:01.783  INFO 14582 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2023-09-27 16:36:01.788  INFO 14582 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2023-09-27 16:36:01.789  INFO 14582 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2023-09-27 16:36:01.791  INFO 14582 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2023-09-27 16:36:01.791  INFO 14582 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-09-27 16:36:01.803  INFO 14582 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-09-27 16:36:01.809  INFO 14582 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-09-27 16:36:02.129  INFO 14582 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: setDisplayContentUsingPOST_1
+2023-09-27 16:36:02.489  INFO 14582 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 6080 (http)
+2023-09-27 16:36:02.579  INFO 14582 --- [nioEventLoopGroup-2-1] io.netty.handler.logging.LoggingHandler  : [id: 0xd70d6204] REGISTERED
+2023-09-27 16:36:02.580  INFO 14582 --- [nioEventLoopGroup-2-1] io.netty.handler.logging.LoggingHandler  : [id: 0xd70d6204] BIND: 0.0.0.0/0.0.0.0:9000
+2023-09-27 16:36:02.581  INFO 14582 --- [nioEventLoopGroup-2-1] io.netty.handler.logging.LoggingHandler  : [id: 0xd70d6204, L:/0:0:0:0:0:0:0:0:9000] ACTIVE
+2023-09-27 16:36:02.824  INFO 14582 --- [nioEventLoopGroup-2-1] io.netty.handler.logging.LoggingHandler  : [id: 0xd70d6204, L:/0:0:0:0:0:0:0:0:9000] READ: [id: 0x5f1c9bbc, L:/192.168.1.103:9000 - R:/192.168.1.87:62794]
+2023-09-27 16:36:02.825  INFO 14582 --- [nioEventLoopGroup-2-1] io.netty.handler.logging.LoggingHandler  : [id: 0xd70d6204, L:/0:0:0:0:0:0:0:0:9000] READ COMPLETE
+2023-09-27 16:36:02.836  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.handle.DeviceMessageHandler    : new client:/192.168.1.87:62794
+2023-09-27 16:36:02.838  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.handle.DeviceMessageHandler    : Client:/192.168.1.87:62794 active
+2023-09-27 16:36:19.400  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.s.c.SocketConnectionManager        : add remote ip->/192.168.1.87:62794, sn->1944278190339, sn.count->1,ip.count->1
+2023-09-27 16:36:19.427  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.connections.SocketConnection   : 终端响应->{"begin":0,"cmd":">HB","type":194,"address":4278190339,"dataLength":12,"end":0,"version":"V21N","rowVersion":"230922","commMode":-15,"channelNo":"AA==","channelVoList":[{"channelNo":1,"status":"","statusName":"门已关","channelStaus":0,"channelName":"1号门"},{"channelNo":2,"status":"","statusName":"门已关","channelStaus":0,"channelName":"2号门"}],"sn":"1944278190339"}
+2023-09-27 16:36:19.427  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.handle.DeviceMessageHandler    : device remote address : /192.168.1.87:62794, cmd : >HB
+2023-09-27 16:36:19.428  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.control.sdk.inner.HeartbeatService   : heartbeat, 4278190339
+2023-09-27 16:36:19.490  INFO 14582 --- [ThreadPoolTaskExecutor-5] c.d.c.s.s.DoorControlSdkMQController     : destination=hearbeat.queue,message=class com.door.addin.vo.TerminalStatus
+2023-09-27 16:36:31.744  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.connections.SocketConnection   : 终端响应->{"begin":0,"cmd":">CD","type":194,"address":4278190339,"dataLength":12,"end":0,"openType":1,"userId":378394784,"currentTimestamp":1687019884,"channelNo":"AQ==","channelVoList":[{"channelNo":1,"status":"1","statusName":"门已开","channelStaus":1,"channelName":"1号门"},{"channelNo":2,"status":"","statusName":"门已关","channelStaus":0,"channelName":"2号门"}],"actionType":1,"authType":255,"sn":"1944278190339"}
+2023-09-27 16:36:31.744  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.handle.DeviceMessageHandler    : device remote address : /192.168.1.87:62794, cmd : >CD
+2023-09-27 16:36:31.744  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.inner.RealTimeDataService      : 上传实时数据, 终端:4278190339
+2023-09-27 16:36:31.760  INFO 14582 --- [ThreadPoolTaskExecutor-10] c.d.c.s.s.DoorControlSdkMQController     : destination=control.real,message=class com.door.control.sdk.procotol.response.ControlRealTimeResponse
+2023-09-27 16:36:43.734  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.connections.SocketConnection   : 终端响应->{"begin":0,"cmd":">DD","type":194,"address":4278190339,"dataLength":52,"end":0,"openType":208,"dynamicType":208,"dynamicData":"https://u.wechat.com/ENw5X-wubW10dnbG88OoNnQ","currentTimestamp":1687019896,"channelNo":"AQ==","channelVoList":[{"channelNo":1,"status":"1","statusName":"门已开","channelStaus":1,"channelName":"1号门"},{"channelNo":2,"status":"","statusName":"门已关","channelStaus":0,"channelName":"2号门"}],"actionType":1,"authType":208,"sn":"1944278190339"}
+2023-09-27 16:36:43.734  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.handle.DeviceMessageHandler    : device remote address : /192.168.1.87:62794, cmd : >DD
+2023-09-27 16:36:43.735  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.inner.RealTimeDataService      : 上传实时动态数据, 终端:4278190339
+2023-09-27 16:36:43.748  INFO 14582 --- [ThreadPoolTaskExecutor-6] c.d.c.s.s.DoorControlSdkMQController     : destination=data.dynamic,message=class com.door.control.sdk.procotol.response.DynamicDataRealTimeResponse
+2023-09-27 16:37:42.773  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.connections.SocketConnection   : 终端响应->{"begin":0,"cmd":">HB","type":194,"address":4278190339,"dataLength":12,"end":0,"version":"V21N","rowVersion":"230922","commMode":-15,"channelNo":"AA==","channelVoList":[{"channelNo":1,"status":"","statusName":"门已关","channelStaus":0,"channelName":"1号门"},{"channelNo":2,"status":"","statusName":"门已关","channelStaus":0,"channelName":"2号门"}],"sn":"1944278190339"}
+2023-09-27 16:37:42.773  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.c.sdk.handle.DeviceMessageHandler    : device remote address : /192.168.1.87:62794, cmd : >HB
+2023-09-27 16:37:42.773  INFO 14582 --- [nioEventLoopGroup-3-1] c.d.control.sdk.inner.HeartbeatService   : heartbeat, 4278190339
+2023-09-27 16:37:42.782  INFO 14582 --- [ThreadPoolTaskExecutor-5] c.d.c.s.s.DoorControlSdkMQController     : destination=hearbeat.queue,message=class com.door.addin.vo.TerminalStatus
+2023-09-27 16:38:33.429  INFO 14582 --- [Thread-15] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68df9280: startup date [Wed Sep 27 16:35:57 CST 2023]; root of context hierarchy
+2023-09-27 16:38:33.434  INFO 14582 --- [Thread-15] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2023-09-27 16:38:38.672  INFO 15395 --- [main] com.door.control.sdk.Application         : Starting Application on jiyutkz-ubuntu with PID 15395 (/home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample/door-control-sdk-service/target/classes started by jiyutkz in /home/jiyutkz/git/door_control/java/door_control_sdk-sample/door-control-sdk-sample)
+2023-09-27 16:38:38.673  INFO 15395 --- [main] com.door.control.sdk.Application         : The following profiles are active: @spring.profiles.active@
+2023-09-27 16:38:38.758  INFO 15395 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5f354bcf: startup date [Wed Sep 27 16:38:38 CST 2023]; root of context hierarchy
+2023-09-27 16:38:40.104  INFO 15395 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring/spring.xml]
+2023-09-27 16:38:40.371  WARN 15395 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.door.control.sdk]' package. Please check your configuration.
+2023-09-27 16:38:40.810  INFO 15395 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 6080 (http)
+2023-09-27 16:38:40.829  INFO 15395 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2023-09-27 16:38:40.829  INFO 15395 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.59
+2023-09-27 16:38:40.940  INFO 15395 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27 16:38:40.941  INFO 15395 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2183 ms
+2023-09-27 16:38:41.077  INFO 15395 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2023-09-27 16:38:41.078  INFO 15395 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2023-09-27 16:38:41.079  INFO 15395 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-09-27 16:38:41.079  INFO 15395 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-09-27 16:38:41.080  INFO 15395 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-09-27 16:38:41.080  INFO 15395 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-09-27 16:38:41.080  INFO 15395 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-09-27 16:38:41.108  WARN 15395 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+2023-09-27 16:38:41.110  INFO 15395 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2023-09-27 16:38:41.125  INFO 15395 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2023-09-27 16:38:41.129 ERROR 15395 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'application': Unsatisfied dependency expressed through field 'deviceServer'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.door.control.sdk.Application.main(Application.java:32)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'deviceServer': Unsatisfied dependency expressed through field 'serverPort'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:77)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:54)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1092)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 32 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "@websocket.port@"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:208)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:113)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:470)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:443)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:200)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:126)
+	at org.springframework.beans.TypeConverterSupport.doConvert(TypeConverterSupport.java:61)
+	... 36 common frames omitted
+

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c37abcfb-69d1-42bd-9d93-b21e9535dfdf" name="Default Changelist" comment="添加java sdk" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2GcUKa42Lg8v9vcTR9M738mTGZb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/duanyu/Desktop/door-control-sdk-sample-java-20230927/door-control-sdk-sample&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5300493bf3bc224387fac8360a0149a2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/door-control-sdk-swagger/src/lib" />
+      <recent name="$PROJECT_DIR$/door-control-sdk-service/src/lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.door.control.sdk.Application" />
+      <module name="door-control-sdk-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.door.control.sdk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sdk" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="door-control-sdk-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.door.control.sdk.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c37abcfb-69d1-42bd-9d93-b21e9535dfdf" name="Default Changelist" comment="" />
+      <created>1666687303863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666687303863</updated>
+      <workItem from="1666687305885" duration="321000" />
+      <workItem from="1666689484744" duration="1280000" />
+      <workItem from="1666748431327" duration="958000" />
+      <workItem from="1666749769699" duration="9537000" />
+      <workItem from="1666770083072" duration="238000" />
+      <workItem from="1666841853693" duration="196000" />
+      <workItem from="1666842076659" duration="47000" />
+      <workItem from="1666939067779" duration="771000" />
+      <workItem from="1667184509544" duration="3157000" />
+      <workItem from="1668749121172" duration="1410000" />
+      <workItem from="1669185825642" duration="193000" />
+      <workItem from="1669189254404" duration="1074000" />
+      <workItem from="1669260654227" duration="226000" />
+      <workItem from="1670811717704" duration="1317000" />
+      <workItem from="1677833875652" duration="798000" />
+      <workItem from="1678408049340" duration="1440000" />
+      <workItem from="1678437045600" duration="2337000" />
+      <workItem from="1678442104192" duration="49000" />
+      <workItem from="1678442178573" duration="1032000" />
+      <workItem from="1679453768722" duration="174000" />
+      <workItem from="1679454077983" duration="607000" />
+      <workItem from="1679474825007" duration="81000" />
+      <workItem from="1679474956380" duration="4455000" />
+      <workItem from="1682391233127" duration="10000" />
+      <workItem from="1693548599921" duration="547000" />
+      <workItem from="1695801580900" duration="1141000" />
+      <workItem from="1697507572498" duration="3359000" />
+      <workItem from="1698052590351" duration="2139000" />
+      <workItem from="1698112581811" duration="9329000" />
+      <workItem from="1698197824074" duration="528000" />
+      <workItem from="1698198408373" duration="4000" />
+    </task>
+    <task id="LOCAL-00001" summary="添加jar提交方式">
+      <created>1666770305554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666770305554</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加java sdk">
+      <created>1678409479275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678409479275</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加java sdk">
+      <created>1679475432522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679475432522</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="添加jar提交方式" />
+    <MESSAGE value="添加java sdk" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加java sdk" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/door-control-sdk-swagger/src/main/java/com/door/control/sdk/swagger/DoorControlSdkMQController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/door-control-sdk-swagger/src/main/java/com/door/control/sdk/swagger/DoorControlSdkMQController.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/door-control-sdk-swagger/src/main/java/com/door/control/sdk/swagger/DoorControlSdkMQController.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/door-control-sdk-swagger/src/main/java/com/door/control/sdk/swagger/DoorControlSdkMQController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="resp.getSn()" />
+        <watch expression="resp.getDynamicData()" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
